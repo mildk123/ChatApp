@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatApp</title>
+
+    <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <button style="display: none; float: right;" class="btn btn-danger" id="signOutBtn">Sign Out</button>
+        </div>
+
+        <div id="form_Div">
+            <form id="form_data">
+                <div class="form_title">
+                    <h1 class="display-4" id="form_title">Create Account</h1>
+                </div>
+
+                <div id="form_input">
+
+                    <div id="name_box">
+                        <label for="Fname">First Name: </label>
+                        <input type="text" class="form-control" name="Fname" id="userFname">
+                    </div>
+
+                    <div id="name_box">
+                        <label for="Lname">Last Name: </label>
+                        <input type="text" class="form-control" name="Lname" id="userLname">
+                    </div>
+
+                    <div id="email_box">
+                        <label for="email">E-mail: </label>
+                        <input type="email" class="form-control" name="email" id="userEmail">
+                    </div>
+
+                    <div id="password_box">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" name="password" id="userPassword">
+                    </div>
+
+                    <!-- <div id="tel_box">
+                        <label for="telephone">Phone No: </label>
+                        <input type="tel" class="form-control" name="telephone" id="userTel">
+                    </div> -->
+
+                    <div id="button_box">
+                        <input type="button" id="signUpBtn" class="btn btn-success" value="Sign Up">
+                    </div>
+
+                </div>
+
+                <br>
+                <a href="index.html">Back To Login Page.</a>
+
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBPj_6vnbHua3w2ii-nNNThAZp9yy3OoXc",
+            authDomain: "webchat-111.firebaseapp.com",
+            databaseURL: "https://webchat-111.firebaseio.com",
+            projectId: "webchat-111",
+            storageBucket: "webchat-111.appspot.com",
+            messagingSenderId: "495284711944"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

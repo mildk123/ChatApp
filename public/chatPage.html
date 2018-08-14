@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatApp</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="chatpage.css">
+    <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div id="header_button">
+            <button class="btn btn-danger" id="signOutBtn">Sign Out</button>
+        </div>
+
+        <div class="container-fluid" id="left_pane">
+            <div class="col-12" id="usersList_header">
+                <h1>User's</h1>
+            </div>
+
+            <ul id="usersList"></ul>
+        </div>
+
+
+<!-- DashBoard -->
+
+        <div  id="DashBoard">
+            <div id="messagesArea">   
+           
+            </div>
+
+            <div id="message_sending_box">
+                <input class="form-control"  type="text" id="message_textBox">
+                <input class="btn btn-info"  type="button" id="sendMsgBtn" value="Send">
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBPj_6vnbHua3w2ii-nNNThAZp9yy3OoXc",
+            authDomain: "webchat-111.firebaseapp.com",
+            databaseURL: "https://webchat-111.firebaseio.com",
+            projectId: "webchat-111",
+            storageBucket: "webchat-111.appspot.com",
+            messagingSenderId: "495284711944"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

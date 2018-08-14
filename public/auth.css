@@ -1,0 +1,165 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background: linear-gradient(120deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  height: 100vh;
+}
+
+li{
+  list-style: none;
+}
+
+/* 
+*
+Header Data
+*
+*/
+
+
+#form_title{
+  color: white;
+  
+  font-size: 4em;
+  color: white;
+  text-shadow: 2px 1px 5px rgb(104, 104, 104);
+  text-align: center;
+}
+
+
+
+/* 
+*
+Login Page
+*
+*/
+
+#form_Div {
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: 2vw;
+  /* background: rgb(164, 130, 197); */
+}
+
+#form_data {
+  width: 95%;
+  padding: 1%;
+  margin: 0 auto;
+
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  /* background: rgb(145, 105, 105); */
+}
+
+.form_title {
+  /* background: lightblue; */
+  margin-top: -10px;
+  margin-bottom: 3%;
+}
+
+#form_title {
+  font-size: 5vw;
+}
+
+#form_input {
+  width: 99%;
+  margin: 0 auto;
+  justify-content: center;
+
+  /* background: blanchedalmond; */
+}
+
+.form-control {
+  width: 99%;
+  clear: both;
+  padding: 0.5%;
+}
+
+#name_box > label {
+    float: left;
+}
+
+#name_box {
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 0%;
+
+  padding: 0.5%;
+
+  /* background: greenyellow; */
+}
+
+#email_box > label {
+  float: left;
+}
+#email_box {
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 0%;
+
+  padding: 0.5%;
+
+  /* background: greenyellow; */
+}
+
+#password_box > label {
+  float: left;
+}
+#password_box {
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 1%;
+
+  padding: 0.5%;
+
+  /* background: greenyellow; */
+}
+
+#tel_box > label {
+    float: left;
+}
+
+#tel_box {
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 0%;
+
+  padding: 0.5%;
+
+  /* background: greenyellow; */
+}
+
+#signUpBtn {
+  width: 12vw;
+  font-size: 1.2em;
+  padding: 1%;
+  margin: 1%;
+}
+#loginBtn {
+  width: 12vw;
+  font-size: 1.2em;
+  padding: 1%;
+  margin: 1%;
+}
+
+a{
+  color: white;
+}
+
+
